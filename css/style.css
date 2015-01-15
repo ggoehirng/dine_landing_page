@@ -93,6 +93,7 @@
 		border-top: solid 1px #ddd;
 		margin: 6em 0 0 0;
 		padding: 6em 0 0 0;
+		z-index: 0
 	}
 	
 	blockquote
@@ -1030,3 +1031,58 @@
 			font-weight: 300;
 			color: rgba(255,255,255,.6);
 		}	
+/*********************************************************************************/
+/* Email                                                                        */
+/*********************************************************************************/
+
+#mc_embed_signup{
+	background:#161616; 
+	clear:left; 
+	font:14px Helvetica,Arial,sans-serif;  
+	width:100%;
+	text-align: center;
+	margin:0 0;
+
+}
+
+#mce-EMAIL{
+	border-radius: 5%;
+	color: black;
+	position: relative;
+	text-align: center;
+	margin: 0 0 
+}
+
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:    black;
+    text-align: center;
+    font-size: 1.4em
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    black;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color:    black;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+   color:    black;
+}
+
+#signup_box{
+	width:100%;
+	display: flex;
+	flex-direction:row;
+}
+
+#mc_embed_signup, .signup{
+	width:25%;
+	height:10%;
+}
+
+#mc_embed_signup{
+	width: 50%
+}
+

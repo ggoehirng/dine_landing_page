@@ -40,7 +40,7 @@
 
 	<body class="homepage">
 		<script type="text/javascript">
-			$(document).load(function(){
+			$(document).ready(function(){
 				mixpanel.track('page viewed', {
 				    'page name' : document.title,
 				    'url' : window.location.pathname
@@ -177,13 +177,19 @@
 						</div>
 						<div class='social_box'>
 							<ul>
-								<a href="http://www.twitter.com/dinerev"><li class="fa fa-twitter"></li></a>
-								<a href="http://www.facebook.com/dinerevolution"><li class="fa fa-facebook"></li></a>
-								<a href="http://instagram.com/dine_rev/"><li class="fa fa-instagram"></li></a>
-								<a href="https://plus.google.com/u/1/109554100916926729753/about"><li class="fa fa-google-plus"></li></a>
-								<a href="https://www.linkedin.com/company/dine"><li class="fa fa-linkedin"></li></a>
+								<a id="twitter" href="http://www.twitter.com/dinerev" class="social"><li class="fa fa-twitter"></li></a>
+								<a id="facebook" class="social" href="http://www.facebook.com/dinerevolution"><li class="fa fa-facebook"></li></a>
+								<a id="instagram" class="social" href="http://instagram.com/dine_rev/"><li class="fa fa-instagram"></li></a>
+								<a id="google+"class="social" href="https://plus.google.com/u/1/109554100916926729753/about"><li class="fa fa-google-plus"></li></a>
+								<a id="linkedin" class="social" href="https://www.linkedin.com/company/dine"><li class="fa fa-linkedin"></li></a>
 							</ul>
 						</div>
+						<script type="text/javascript">
+							$(".social").click(function(){
+								var network = $(this).attr('id');
+								mixpanel.track(network)
+							})
+						</script>
 						<style type="text/css">
 							#mce-EMAIL{
 								left: 120px;

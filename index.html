@@ -39,6 +39,14 @@
 	</head>
 
 	<body class="homepage">
+		<script type="text/javascript">
+			$(document).load(function(){
+				mixpanel.track('page viewed', {
+				    'page name' : document.title,
+				    'url' : window.location.pathname
+				});
+			})
+		</script>
 
 	<!-- Header -->
 	<!--dl.dropboxusercontent.com-->

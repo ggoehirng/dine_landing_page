@@ -188,7 +188,7 @@
 						<script type="text/javascript">
 							$(".social").click(function(){
 								var network = $(this).attr('id');
-								mixpanel.track("Social Media Visit",{"Network": network});
+								mixpanel.track_links("Social Media Visit",{"Network": network});
 								console.log("tracked "+ network)
 							})
 						</script>

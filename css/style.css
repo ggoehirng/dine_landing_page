@@ -192,6 +192,10 @@
 				width: 100%;
 				margin: 0 0 2em 0;
 			}
+
+			.team-row{
+				margin: 0 0 1em 0;
+			}
 			
 			.image.full
 			{
@@ -313,7 +317,7 @@
 /* Licensed under the SIL OFL 1.1 (font), MIT (CSS)                              */
 /*********************************************************************************/
 
-	.fa
+	.fa, 
 	{
 		text-decoration: none;
 	}
@@ -327,7 +331,7 @@
 				display: none;
 			}
 
-		.fa:before
+		.fa:before, .personal-pic, .garrett:before
 		{
 			display:inline-block;
 			font-family: FontAwesome;
@@ -737,6 +741,10 @@
 		.fa-fax:before{content:"\f1ac"}
 		.fa-share-alt:before{content:"\f1e0"}
 		.fa-cubes:before{content:"\f1b3"}
+		.personal-pic{
+			height: 268px;
+			width: 274px
+		}
 
 /*********************************************************************************/
 /* Social Icon Styles                                                            */
@@ -864,6 +872,10 @@
 
 		}
 		
+		.nav-team{
+			background-color: black
+		}
+
 		#nav > ul
 		{
 			margin: 0;
@@ -1130,4 +1142,17 @@
 	width: 100%;
 	position: relative;
 	top:-50px
+}
+/*********************************************************************************/
+/* Team Specific                                                                        */
+/*********************************************************************************/
+
+#team-tittle{
+	text-align: center;
+	position:relative;
+}
+
+#team-tittle h2{
+	left: 50% ;
+	text-align:center;
 }

@@ -1146,13 +1146,13 @@
 /*********************************************************************************/
 /* Team Specific                                                                        */
 /*********************************************************************************/
-
-#team-tittle{
+.teamcontent{
+	margin-top:30px;
 	text-align: center;
-	position:relative;
 }
 
-#team-tittle h2{
-	left: 50% ;
-	text-align:center;
+.team-footer{
+	padding-top: 0px;
+	height: 10px
 }
+

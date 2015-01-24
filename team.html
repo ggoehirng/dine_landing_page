@@ -20,6 +20,22 @@
 			<link rel="stylesheet" href="css/style.css" />
 			<link rel="stylesheet" href="css/style-desktop.css" />
 		</noscript>
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-58621875-1', 'auto');
+		  ga('send', 'pageview');
+
+		</script>
+		<!-- start Mixpanel -->
+		<script type="text/javascript">(function(f,b){if(!b.__SV){var a,e,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");
+		for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=f.createElement("script");a.type="text/javascript";a.async=!0;a.src="//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";e=f.getElementsByTagName("script")[0];e.parentNode.insertBefore(a,e)}})(document,window.mixpanel||[]);
+		mixpanel.init("6c0b2f76c562be794575a224e5304ad3");
+	//Change token for live version
+		</script>
 	</head>
 	<body>
 
@@ -52,14 +68,15 @@
 
 	<!-- Main -->
 		<div id="main">
-			<div id="content" class="container">
-				<section>
+			<div id='left_centerer'></div>
+			<div id="content" class="container teamcontent">
+				<div id="title-box">
 					<header class="team-tittle">
 						<h2 >The Team</h2>
-						<span class="byline">Integer sit amet pede vel arcu aliquet pretium</span>
+						<span class="byline">Here's a little bit about who we are.</span>
 					</header>
 					
-				</section>
+				</div>
 			</div>
 		</div>
 	<!-- /Main -->
@@ -102,30 +119,33 @@
 	/Tweet -->
 
 	<!-- Footer -->
-		<div id="footer">
+		<div id="footer" class="team-footer">
+			<div class='social_box team-social_box'>
+							<ul>
+								<a id="twitter" href="http://www.twitter.com/dinerev" class="social"><li class="fa fa-twitter"></li></a>
+								<a id="facebook" class="social" href="http://www.facebook.com/dinerevolution"><li class="fa fa-facebook"></li></a>
+								<a id="instagram" class="social" href="http://instagram.com/dine_rev/"><li class="fa fa-instagram"></li></a>
+								<a id="google+"class="social" href="https://plus.google.com/u/1/109554100916926729753/about"><li class="fa fa-google-plus"></li></a>
+								<a id="linkedin" class="social" href="https://www.linkedin.com/company/dine"><li class="fa fa-linkedin"></li></a>
+							</ul>
+						</div>
+						<script type="text/javascript">
+							$(".social").click(function(){
+								var network = $(this).attr('id');
+								mixpanel.track_links("Social Media Visit",{"Network": network});
+								console.log("tracked "+ network)
+							})
+						</script>
+						<div id="copyright" class='team-copyright'>
 			<div class="container">
-				<section>
-					<header>
-						<h2>Get in touch</h2>
-						<span class="byline">Integer sit amet pede vel arcu aliquet pretium</span>
-					</header>
-					<ul class="contact">
-						<li><a href="#" class="fa fa-twitter"><span>Twitter</span></a></li>
-						<li class="active"><a href="#" class="fa fa-facebook"><span>Facebook</span></a></li>
-						<li><a href="#" class="fa fa-dribbble"><span>Pinterest</span></a></li>
-						<li><a href="#" class="fa fa-tumblr"><span>Google+</span></a></li>
-					</ul>
-				</section>
+				Design by <a href="http://templated.co">TEMPLATED</a> 
 			</div>
+		</div>
 		</div>
 	<!-- /Footer -->
 
 	<!-- Copyright -->
-		<div id="copyright">
-			<div class="container">
-				Design: <a href="http://templated.co">TEMPLATED</a> Images: <a href="http://unsplash.com">Unsplash</a> (<a href="http://unsplash.com/cc0">CC0</a>)
-			</div>
-		</div>
+		
 
 
 	</body>

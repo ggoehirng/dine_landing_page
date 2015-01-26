@@ -1068,9 +1068,79 @@
 /* Email                                                                        */
 /*********************************************************************************/
 
-#mc_embed_signup{
-	background:white; 
-	clear:left; 
+#
+
+.social_box ul {
+	display: flex;
+	flex-direction:row;
+	margin: 0 auto;
+	position: inherit;
+	text-align: center;
+	margin-left: 42.5%
+
+}
+
+.social_box ul li{
+	margin: 8px;}
+
+
+.social_box{
+	width: 100%;
+	position: relative;
+	top:-50px
+}
+
+.join{
+	height: 75px;
+	width: 250px;
+	background-color: black;
+	color:white;
+	border: none;
+	border-radius: 0%;
+	font-size: 1.5em;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 200
+}
+
+.join-top{
+	background-color: rgba(255, 255, 255, 0);
+	color: white;
+	margin-top: 15px;
+	height: 50px;
+	width: 220px;
+	border:2px solid white;
+}
+
+.join-top:hover{
+	background-color: white;
+	color: black
+}
+/*********************************************************************************/
+/* Team Specific                                                                        */
+/*********************************************************************************/
+.teamcontent{
+	margin-top:30px;
+	text-align: center;
+}
+
+.team-footer{
+	padding-top: 0px;
+	height: 10px
+}
+/*********************************************************************************/
+/* Signup page                                                                      */
+/*********************************************************************************/
+.sign_container{
+height: 100%;
+width:100%;
+background: url("https://dl.dropboxusercontent.com/s/jp5cev7vi16pg8b/DSC_0064-870x490.jpg?dl=0") no-repeat center center fixed;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+
+mc_embed_signup{ 
 	font:14px Helvetica,Arial,sans-serif;  
 	width:100%;
 	text-align: center;
@@ -1106,14 +1176,14 @@
 
 #signup_box{
 	width:100%;
-	display: flex;
-	flex-direction:row;
-
+	display: relative;
 }
 
 #mc_embed_signup, .signup{
 	width:25%;
 	height:10%;
+	margin-left:35%;
+	margin-top: 3%
 }
 
 #left{
@@ -1121,38 +1191,36 @@
 }
 
 #mc_embed_signup{
-	width: 50%
+	width: 50%;
 }
 
-.social_box ul {
-	display: flex;
-	flex-direction:row;
-	margin: 0 auto;
-	position: inherit;
-	text-align: center;
-	margin-left: 42.5%
-
+input.button{
+	background-color: rgba(255, 255, 255, 0)!important;
+	color: white!important;
+	margin-top: 15px!important;
+	height: 50px!important;
+	width: 220px!important;
+	border:2px solid white!important;
+	left: 55px!important;
 }
 
-.social_box ul li{
-	margin: 8px;}
-
-
-.social_box{
-	width: 100%;
-	position: relative;
-	top:-50px
+input.button:hover{
+	background-color: white!important;
+	color: black!important;
 }
-/*********************************************************************************/
-/* Team Specific                                                                        */
-/*********************************************************************************/
-.teamcontent{
-	margin-top:30px;
+
+.sign_title{
+	color: white;
+	font-family: 'Roboto', sans-serif;
 	text-align: center;
 }
 
-.team-footer{
-	padding-top: 0px;
-	height: 10px
+.first{
+	font-size: 5em;
+	margin-top: 22%
 }
 
+.leave{
+	font-size: 2em;
+	margin-top: 2.5%
+}

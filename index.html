@@ -169,14 +169,17 @@
 								var network = $(this).attr('id');
 								mixpanel.track_links("Social Media Visit",{"Network": network});
 								console.log("tracked "+ network)
-							})
+							});
+							
+						</script>
+						<script type="text/javascript">
 							$(".join").click(function(){
 								var location = $(this).attr('id');
 								if (location === "join-top") {
 									location = "top";
 								} else{
 									location = "bottom";
-								}
+								};
 								mixpanel.track_links("Visited Signup Page",{"Location": location});
 								console.log("tracked "+ network)
 							})
